@@ -1,33 +1,46 @@
+@font-face {
+    font-family: Montessarat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+h1, h2{
+    color: #5dfdcb;
+}
+
+h3{
+    color: #f05d5e;
+}
+
+body {
+    background-color: #272932;
+    font-family: Montessarat, Georgia, "Times New Roman", Times, serif;
+    color: #c9f9ff;
+    font-size: medium;
+    margin: 0px;
+}
+
 img.center_cropped {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     margin-left: auto;
+    display: block;
     margin-right: auto;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
+.tech_stack.tr{
+    color: #d8a47f;
+}
+
+
 #contact_form {
     display: block;
     font-size: 11px;
     padding: 4px 2px;
     width: 100px;
-}
-
-tr {
-    border: thin dotted gray;
-    padding: 5px;
-
-}
-
-table{
-    margin-left: 20px;
-    margin-right: 20px;
-    border: thin solid black;
-    caption-side: bottom;
-    border-collapse: collapse;
 }
 
 form {
