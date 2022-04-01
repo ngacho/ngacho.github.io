@@ -9,16 +9,38 @@
 </head>
 
 <body>
-    <section id="welcome">
-        <h1>Welcome</h1>
-        <p>Hi, I'm Ngacho<br>I build Android and Web applications</p>
-        <button>Contact Me</button>
+    <!-- Sidebar -->
+    <!--<section id="navigation">
+        <div class="navigation_tabs">
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#about_me">Who I'm I?</a></li>
+                    <li><a href="#projects">Some Things I've Done</a></li>
+                    <li><a href="#contact_me">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>-->
+
+    <!-- welcome page-->
+    <section class="welcome">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner"></div>
+            </div>
+            <h2>Hi, my name is</h1>
+            <p id="name">Ngacho,<br> <em>I build Android and Web applications</em></p>
+            <button class="button">Contact Me</button>
+        </div>
     </section>
+
+
     <section id="about_me">
         <h2>About Me</h2>
         <img class="center_cropped" id="profile_picture" alt="My photo" ß src="images/my_image.jpg">
         <p>
-            
+
             I'm a programmer and computer scientist. In the software world, I've worked as a systems intern, back end
             developer,
             data pipeline intern, and in artificial intelligence. Most of my expertise is in front-end development. I've
@@ -47,21 +69,22 @@
                     Intelligence.
                     The agent competed against other agents in a round-robin capture the flag tournament and emerged 5th
                     out of 41 teams. Technologies and techniques used:
-                    <table class="tech_stack"> 
-                        <tr>
-                            Python
-                        </tr>
-                        <tr>
-                            Particle Filtering
-                        </tr>
-                        <tr>
-                            Q learning
-                        </tr>
-                        <tr>
-                            Alpha-Beta Search
-                        </tr>
-                    </table><br>
-                    <a href="https://github.com/ngacho/pacman-contest"><img width="16" height="16" alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
+                <table class="tech_stack">
+                    <tr>
+                        Python
+                    </tr>
+                    <tr>
+                        Particle Filtering
+                    </tr>
+                    <tr>
+                        Q learning
+                    </tr>
+                    <tr>
+                        Alpha-Beta Search
+                    </tr>
+                </table><br>
+                <a href="https://github.com/ngacho/pacman-contest"><img width="16" height="16" alt="Github logo"
+                        src="images/GitHub-Mark-32px.png"></a></p>
 
             </li>
             <li>
@@ -80,11 +103,13 @@
                     </tr>
 
                 </table><br>
-                <a href="https://github.com/ngacho/RunTrackingDemo"><img width="16" height="16" alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
+                <a href="https://github.com/ngacho/RunTrackingDemo"><img width="16" height="16" alt="Github logo"
+                        src="images/GitHub-Mark-32px.png"></a></p>
             </li>
             <li>
                 <h3>Protaskinator</h3>
-                <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies and techniques used:
+                <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies and
+                    techniques used:
                 <table class="tech_stack">
                     <tr>
                         Mvvm architecture
@@ -99,20 +124,21 @@
                         Dagger 2 for Dependency Injection
                     </tr>
                 </table><br>
-                <a href="https://github.com/ngacho/Protaskinator"><img width="16" height="16" alt="Github logo" src="images/GitHub-Mark-32px.png"></a>
+                <a href="https://github.com/ngacho/Protaskinator"><img width="16" height="16" alt="Github logo"
+                        src="images/GitHub-Mark-32px.png"></a>
                 </p>
             </li>
         </ul>
 
     </section>
-    <section id="contact me">
+    <section id="contact_me">
         <h2>Contact Me</h2>
         <form id="contact_form">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
             <input type="text" placeholder="Subject">
             <input type="text" id="message" placeholder="Message" width="100" height="50">
-            <input type="submit" value="Send Message">
+            <input class="button" type="submit" value="Send Message">
 
         </form>
     </section>
