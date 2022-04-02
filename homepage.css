@@ -104,6 +104,7 @@ section#about_me img.center_cropped {
     width: 300px;
     margin: 20px;
     height: 300px;
+    object-fit: cover;
     border-radius: 50%;
     float: right;
 
