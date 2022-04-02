@@ -168,7 +168,8 @@ div.card_layout:hover {
     margin: auto;
 }
 
-form#contact_form input, textarea {
+form#contact_form input,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #5dfdcb;
@@ -179,8 +180,8 @@ form#contact_form input, textarea {
     margin: 10px;
 }
 
-input#send_message{
-    float: right; 
+input#send_message {
+    float: right;
 }
 
 
@@ -190,13 +191,13 @@ label {
 
 form#contact_form textarea {
     height: 150px;
-  }
+}
 
 input {
     display: table-cell;
 }
 
-footer{
+footer {
     display: block;
     font-size: 0.8em;
     width: 50%;
@@ -204,3 +205,73 @@ footer{
     opacity: 60%;
     margin: auto;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section.welcome div h2 {
+        font-size: 1.2em;
+    }
+
+    section.welcome div p#name {
+        font-size: 2.4em;
+    }
+
+    section.welcome div {
+        display: block;
+        line-height: normal;
+        margin: auto;
+        width: 80%;
+    }
+
+
+    section#about_me div {
+        font-size: 1.2em;
+        display: block;
+        line-height: normal;
+        margin: auto;
+        width: 80%;
+    }
+
+    section#about_me div p {
+        opacity: 60%;
+        line-height: 1.3;
+        color: #c9f9ff;
+    }
+
+    section#about_me div#tech_toolbox {
+        line-height: 1;
+        float: left;
+        font-size: 1em;
+        opacity: 80%;
+    }
+
+    section#about_me div#tech_toolbox li {
+        list-style-type: '\\>';
+        padding-left: 1em;
+    }
+
+    section#about_me img.center_cropped {
+        border: 5px solid #5dfdcb;
+        width: 300px;
+        margin: 20px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        float: bottom;
+
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
