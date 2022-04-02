@@ -176,15 +176,24 @@ form#contact_form input, textarea {
     box-sizing: border-box;
     background-color: #35373d;
     color: #b4fae4;
+    margin: 10px;
 }
+
+input#send_message{
+    float: right; 
+}
+
 
 label {
     display: table-cell;
 }
 
+form#contact_form textarea {
+    height: 150px;
+  }
+
 input {
     display: table-cell;
-    margin: 10px;
 }
 
 footer{
