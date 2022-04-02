@@ -217,8 +217,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+
+        min-height: 100vh;
     }
 
+    .welcome_page_container{
+        flex-grow: 1;
+    }
     .about-me-wrapper {
         order: 1;
         margin: auto;
@@ -235,15 +240,18 @@ footer {
         flex-direction: column;
 
         font-size: 1em;
+        flex-grow: 1;
     }
 
     .projects-wrapper {
         order: 2;
-        
+
         width: 90%;
         margin: auto;
         font-size: 1em;
         line-height: 1;
+
+        flex-grow: 1;
 
     }
 
@@ -253,8 +261,17 @@ footer {
         width: 95%;
         margin: auto;
         font-size: 1em;
+        
         line-height: 1;
 
+        flex-grow: 1;
+    }
+
+    .form p{
+        font-size: 0.85em;
+        margin: auto;
+        opacity: 90%;
+        width: 90%;
     }
 
     .footer {
@@ -281,16 +298,16 @@ footer {
         width: 80%;
     }
 
-    .profile-pic-wrapper{
+    .profile-pic-wrapper {
         order: 2;
     }
 
-    .descript-wrapper{
+    .descript-wrapper {
         order: 0;
 
     }
 
-    .tech-toolbox-wrapper{
+    .tech-toolbox-wrapper {
         order: 1;
 
         line-height: 1;
@@ -327,9 +344,9 @@ footer {
         list-style-type: '\\>';
         padding-left: 1em;
     }
- 
 
-    div.card_layout {  
+
+    div.card_layout {
         width: 90%;
         margin: auto;
         margin-top: 20px;
@@ -337,26 +354,30 @@ footer {
         border-radius: 5px;
         padding: 20px;
         opacity: 90%;
+        font-size: 0.8em;
+        line-height: 1.7;
         transition: transform .2s;
         /* Animation */
         -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
         box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
     }
-    
+
     div.card_layout:hover {
         transform: scale(1.05);
         /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .tech_stack td {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
