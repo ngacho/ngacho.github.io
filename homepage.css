@@ -76,14 +76,6 @@ section.welcome div p#name em {
     font-style: normal;
 }
 
-section#about_me div {
-    font-size: 1.3em;
-    display: block;
-    line-height: normal;
-    margin: auto;
-    width: 60%;
-}
-
 section#about_me div p {
     opacity: 60%;
     line-height: 1.5;
@@ -217,13 +209,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
-        min-height: 100vh;
     }
 
-    .welcome_page_container{
-        flex-grow: 1;
+    .welcome_page_container {
+        order: 0;
     }
+
     .about-me-wrapper {
         order: 1;
         margin: auto;
@@ -261,13 +252,13 @@ footer {
         width: 95%;
         margin: auto;
         font-size: 1em;
-        
+
         line-height: 1;
 
         flex-grow: 1;
     }
 
-    .form p{
+    .form p {
         font-size: 0.85em;
         margin: auto;
         opacity: 90%;
@@ -375,7 +366,109 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 992px) {
+
+    .whole_page_container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .welcome_page_container {
+        order: 0;
+
+    }
+
+    section.welcome div {
+        display: block;
+        line-height: normal;
+        margin: auto;
+        width: 90%;
+    }
+
+    .about-me-wrapper {
+        order: 1;
+        margin: auto;
+        width: 95%;
+    }
+
+    .projects-wrapper {
+        order: 2;
+
+        width: 90%;
+        margin: auto;
+        font-size: 1em;
+        line-height: 1;
+
+    }
+
+    .form {
+        order: 3;
+
+        width: 95%;
+        margin: auto;
+        font-size: 1.2em;
+
+        line-height: 1;
+    }
+
+    .form p {
+        font-size: 1em;
+        margin: auto;
+        opacity: 90%;
+        width: 90%;
+    }
+
+    .footer {
+        order: 4;
+        width: 100%;
+        align-items: center;
+    }
+
+    section#about_me div {
+        font-size: 1em;
+        line-height: normal;
+        padding: 10px;
+        width: 95%;
+    }
+
+    section#about_me div p {
+        opacity: 60%;
+        line-height: 1.3;
+        color: #c9f9ff;
+    }
+
+    div.card_layout {
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #35373d;
+        border-radius: 5px;
+        padding: 20px;
+        opacity: 90%;
+        font-size: 1em;
+        line-height: 1.7;
+        transition: transform .2s;
+        /* Animation */
+        -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    div.card_layout:hover {
+        transform: scale(1.05);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .tech_stack td {
+        font-size: 0.8em;
+    }
+
 
 }
 
@@ -383,7 +476,100 @@ footer {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+
+    .whole_page_container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .welcome_page_container {
+        order: 0;
+    }
+
+    .about-me-wrapper {
+        order: 1;
+
+        width: 60%;
+        margin: auto;
+
+        line-height: 1;
+        font-size: 1.2em;
+    }
+
+    .projects-wrapper {
+        order: 2;
+
+        width: 60%;
+        margin: auto;
+        font-size: 1em;
+        line-height: 1;
+
+    }
+
+    .form {
+        order: 3;
+
+        width: 60%;
+        margin: auto;
+        font-size: 1.2em;
+
+        line-height: 1;
+    }
+
+    .form p {
+        font-size: 1em;
+        margin: auto;
+        opacity: 90%;
+        width: 60%;
+    }
+
+    .footer {
+        order: 4;
+        width: 100%;
+        align-items: center;
+    }
+
+    div.card_layout {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #35373d;
+        border-radius: 5px;
+        padding: 20px;
+        opacity: 90%;
+        font-size: 1em;
+        line-height: 1.7;
+        transition: transform .2s;
+        /* Animation */
+        -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    div.card_layout:hover {
+        transform: scale(1.05);
+        /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .tech_stack td {
+        font-size: 0.8em;
+    }
+
+    .form p {
+        font-size: 1em;
+        margin: auto;
+        opacity: 90%;
+        width: 95%;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
