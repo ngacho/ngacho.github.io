@@ -92,6 +92,11 @@ section#about_me div#tech_toolbox{
     opacity: 80%;
 }
 
+section#about_me div#tech_toolbox li{
+    list-style-type: '\\>';
+    padding-left: 1em;
+}
+
 section#about_me img.center_cropped {
     border: 5px solid #5dfdcb;
     width: 300px;
