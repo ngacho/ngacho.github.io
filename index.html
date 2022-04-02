@@ -2,7 +2,7 @@
 <html>
 
 <head lang="en">
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Brandon Ngacho</title>
     <link rel="stylesheet" type="text/css" href="homepage.css">
 
@@ -157,15 +157,24 @@
 
     </section>
     <section id="contact_me">
-        <h2>Contact Me</h2>
-        <form id="contact_form">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <input type="text" id="message" placeholder="Message" width="100" height="50">
+        <div class="form">
+            <h2>Contact Me</h2>
+            <p>
+                Though I'm not looking for any opportunities, my dms are always open
+            </p>
+            <form id="contact_form">
+                <div class="name_email">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Subject">
+                <input id="message" placeholder="Message" class="message_area" type="text">
+            </form>
+
             <input class="button" type="submit" value="Send Message">
 
-        </form>
+        </div>
+
     </section>
 </body>
 

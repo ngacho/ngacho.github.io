@@ -3,9 +3,10 @@
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 html,
 body {
     height: 100%;
@@ -28,6 +29,7 @@ h3 {
     color: #f05d5e;
     padding: 10px;
     font-size: 16px;
+    transition: transform .2s;
     background-color: Transparent;
     background-repeat: no-repeat;
 }
@@ -35,6 +37,7 @@ h3 {
 .button:hover {
     background-color: #5dfdcb;
     color: #272932;
+    transform: scale(1.2)
 }
 
 body {
@@ -126,22 +129,30 @@ div.card_layout {
     border-radius: 5px;
     padding: 20px;
     opacity: 90%;
+    transition: transform .2s;
+    /* Animation */
     -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-.github_logo{
-    
+div.card_layout:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.github_logo {
+
     filter: invert(86%) sepia(20%) saturate(1075%) hue-rotate(99deg) brightness(100%) contrast(99%);
 }
 
-.tech_stack{
+.tech_stack {
     display: block;
     table-layout: fixed;
-    border-collapse: separate;    
+    border-collapse: separate;
 }
 
-.tech_stack td{
+.tech_stack td {
     border: 2px solid #f05d5e;
     padding: 10px;
     font-size: 0.7em;
@@ -151,15 +162,20 @@ div.card_layout {
     display: inline-block;
 }
 
-#contact_form {
-    display: block;
-    font-size: 11px;
-    padding: 4px 2px;
-    width: 100px;
+.form {
+    /*Div wrapper for the form*/
+    width: 50%;
+    margin: auto;
 }
 
-form {
-    display: table;
+form#contact_form input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #5dfdcb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #35373d;
+    color: #b4fae4;
 }
 
 label {
