@@ -3,6 +3,9 @@
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
     height: 100%;
@@ -70,8 +73,7 @@ section.welcome div p#name em {
     font-style: normal;
 }
 
-section#about_me div,
-section#projects div {
+section#about_me div {
     font-size: 1.3em;
     display: block;
     line-height: normal;
@@ -85,14 +87,14 @@ section#about_me div p {
     color: #c9f9ff;
 }
 
-section#about_me div#tech_toolbox{
+section#about_me div#tech_toolbox {
     line-height: 2;
     float: left;
     font-size: 1em;
     opacity: 80%;
 }
 
-section#about_me div#tech_toolbox li{
+section#about_me div#tech_toolbox li {
     list-style-type: '\\>';
     padding-left: 1em;
 }
@@ -105,6 +107,47 @@ section#about_me img.center_cropped {
     border-radius: 50%;
     float: right;
 
+}
+
+section#projects {
+    font-size: 1.3em;
+    display: block;
+    line-height: 1.5;
+    line-height: normal;
+    margin: auto;
+    width: 70%;
+
+}
+
+div.card_layout {
+    margin: 20px;
+    background-color: #35373d;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: 90%;
+    -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.github_logo{
+    
+    filter: invert(86%) sepia(20%) saturate(1075%) hue-rotate(99deg) brightness(100%) contrast(99%);
+}
+
+.tech_stack{
+    display: block;
+    table-layout: fixed;
+    border-collapse: separate;    
+}
+
+.tech_stack td{
+    border: 2px solid #f05d5e;
+    padding: 10px;
+    font-size: 0.7em;
+    opacity: 70%;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 #contact_form {

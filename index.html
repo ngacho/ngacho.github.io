@@ -28,7 +28,8 @@
         <div>
             <h2>Hi, my name is</h1>
                 <p id="name">Ngacho,<br> <em>I build Android and Web applications</em></p>
-                <button class="button">Contact Me</button>
+                <button class="button" onClick="document.getElementById('contact_me').scrollIntoView();">Contact
+                    Me</button>
         </div>
     </section>
 
@@ -72,75 +73,85 @@
     <section id="projects">
         <div>
             <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Artificially Intelligent Pacman agent</h3>
-                    <p>Working in a team of 3, we implemented a pac-man agent for COSC-241: Introduction to Artificial
-                        Intelligence.
-                        The agent competed against other agents in a round-robin capture the flag tournament and emerged
-                        5th
-                        out of 41 teams. Technologies and techniques used:
-                    <table class="tech_stack">
-                        <tr>
+            <div class="card_layout">
+                <h3>Artificially Intelligent Pacman agent</h3>
+                <p>Working in a team of 3, we implemented a pac-man agent for COSC-241: Introduction to
+                    Artificial
+                    Intelligence.
+                    The agent competed against other agents in a round-robin capture the flag tournament and
+                    emerged
+                    5th
+                    out of 41 teams. Technologies and techniques used:
+                <table class="tech_stack">
+                    <tr>
+                        <td>
                             Python
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Particle Filtering
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Q learning
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Alpha-Beta Search
-                        </tr>
-                    </table><br>
-                    <a href="https://github.com/ngacho/pacman-contest"><img width="16" height="16" alt="Github logo"
-                            src="images/GitHub-Mark-32px.png"></a></p>
+                        </td>
+                    </tr>
+                </table><br>
+                <a href="https://github.com/ngacho/pacman-contest"><img class="github_logo" width="24" height="24"
+                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
+            </div>
 
-                </li>
-                <li>
-                    <h3>Run Tracking Demo</h3>
-                    <p>I learnt how to impelement tracking using Google Maps APIs on Android.Adapted from the youtube
-                        series
-                        by Phillip Lackner Technologies and techniques used:
-                    <table class="tech_stack">
-                        <tr>
+            <div class="card_layout">
+                <h3>Run Tracking Demo</h3>
+                <p>I learnt how to impelement tracking using Google Maps APIs on Android.Adapted from the youtube
+                    series
+                    by Phillip Lackner Technologies and techniques used:
+                <table class="tech_stack">
+                    <tr>
+                        <td>
                             Mvvm architecture
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Dagger Hilt
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Google Maps API
-                        </tr>
+                        </td>
+                    </tr>
+                </table><br>
+                <a href="https://github.com/ngacho/RunTrackingDemo"><img class="github_logo" width="24" height="24"
+                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
 
-                    </table><br>
-                    <a href="https://github.com/ngacho/RunTrackingDemo"><img width="16" height="16" alt="Github logo"
-                            src="images/GitHub-Mark-32px.png"></a></p>
-                </li>
-                <li>
-                    <h3>Protaskinator</h3>
-                    <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies
-                        and
-                        techniques used:
-                    <table class="tech_stack">
-                        <tr>
+            </div>
+
+
+            <div class="card_layout">
+                <h3>Protaskinator</h3>
+                <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies
+                    and
+                    techniques used:
+                <table class="tech_stack">
+                    <tr>
+                        <td>
                             Mvvm architecture
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Room for sqlite
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Navigation component
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
                             Dagger 2 for Dependency Injection
-                        </tr>
-                    </table><br>
-                    <a href="https://github.com/ngacho/Protaskinator"><img width="16" height="16" alt="Github logo"
-                            src="images/GitHub-Mark-32px.png"></a>
-                    </p>
-                </li>
+                        </td>
+                    </tr>
+                </table><br>
+                <a href="https://github.com/ngacho/Protaskinator"><img class="github_logo" width="24" height="24"
+                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a>
+                </p>
+            </div>
+
             </ul>
         </div>
 
