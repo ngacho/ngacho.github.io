@@ -186,3 +186,12 @@ input {
     display: table-cell;
     margin: 10px;
 }
+
+footer{
+    display: block;
+    font-size: 0.8em;
+    width: 50%;
+    text-align: center;
+    opacity: 60%;
+    margin: auto;
+}
