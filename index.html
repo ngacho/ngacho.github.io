@@ -23,161 +23,168 @@
         </div>
     </section>-->
 
-    <!-- welcome page-->
-    <section class="welcome">
-        <div>
-            <h2>Hi, my name is</h1>
-                <p id="name">Ngacho,<br> <em>I build Android and Web applications</em></p>
-                <button class="button" onClick="document.getElementById('contact_me').scrollIntoView();">Contact
-                    Me</button>
-        </div>
-    </section>
-
-
-    <!-- about me section-->
-    <section id="about_me">
-        <div>
-            <h2>About Me</h2>
-            <img class="center_cropped" id="profile_picture" alt="My photo" ß src="images/my_image.jpg">
-            <p>
-
-                I'm a programmer and statistician. I'm still pursuing my bachelors in Computer
-                Science
-                and Statistics. In the software world, I've worked as a systems intern, back
-                end
-                developer,
-                data pipeline intern, and in artificial intelligence. Most of my expertise is in front-end development.
-                I've
-                worked
-                extensively in developing web and android applications.
-                Outside tech, I play the guitar, play Fantasy Premier League, and read books. This website
-                is a collection of some projects I've worked on, and musings on some things I've read.
-
-            <div id="tech_toolbox">
-                <p>I've worked in the following languages or with the following technologies</p>
-                <ul>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>Firebase</li>
-                    <li>Java and Kotlin</li>
-                    <li>R</li>
-                </ul>
-                </p>
-
+    <div class="whole_page_container">
+        <!-- welcome page-->
+        <section class="welcome">
+            <div>
+                <h2>Hi, my name is</h1>
+                    <p id="name">Ngacho,<br> <em>I build Android and Web applications</em></p>
+                    <button class="button" onClick="document.getElementById('contact_me').scrollIntoView();">Contact
+                        Me</button>
             </div>
-
-        </div>
-
-
-    </section>
-    <section id="projects">
-        <div>
-            <h2>Projects</h2>
-            <div class="card_layout">
-                <h3>Artificially Intelligent Pacman agent</h3>
-                <p>Working in a team of 3, we implemented a pac-man agent for COSC-241: Introduction to
-                    Artificial
-                    Intelligence.
-                    The agent competed against other agents in a round-robin capture the flag tournament and
-                    emerged
-                    5th
-                    out of 41 teams. Technologies and techniques used:
-                <table class="tech_stack">
-                    <tr>
-                        <td>
-                            Python
-                        </td>
-                        <td>
-                            Particle Filtering
-                        </td>
-                        <td>
-                            Q learning
-                        </td>
-                        <td>
-                            Alpha-Beta Search
-                        </td>
-                    </tr>
-                </table><br>
-                <a href="https://github.com/ngacho/pacman-contest"><img class="github_logo" width="24" height="24"
-                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
-            </div>
-
-            <div class="card_layout">
-                <h3>Run Tracking Demo</h3>
-                <p>I learnt how to impelement tracking using Google Maps APIs on Android.Adapted from the youtube
-                    series
-                    by Phillip Lackner Technologies and techniques used:
-                <table class="tech_stack">
-                    <tr>
-                        <td>
-                            Mvvm architecture
-                        </td>
-                        <td>
-                            Dagger Hilt
-                        </td>
-                        <td>
-                            Google Maps API
-                        </td>
-                    </tr>
-                </table><br>
-                <a href="https://github.com/ngacho/RunTrackingDemo"><img class="github_logo" width="24" height="24"
-                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
-
-            </div>
+        </section>
 
 
-            <div class="card_layout">
-                <h3>Protaskinator</h3>
-                <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies
-                    and
-                    techniques used:
-                <table class="tech_stack">
-                    <tr>
-                        <td>
-                            Mvvm architecture
-                        </td>
-                        <td>
-                            Room for sqlite
-                        </td>
-                        <td>
-                            Navigation component
-                        </td>
-                        <td>
-                            Dagger 2 for Dependency Injection
-                        </td>
-                    </tr>
-                </table><br>
-                <a href="https://github.com/ngacho/Protaskinator"><img class="github_logo" width="24" height="24"
-                        alt="Github logo" src="images/GitHub-Mark-32px.png"></a>
-                </p>
-            </div>
-
-            </ul>
-        </div>
-
-    </section>
-    <section id="contact_me">
-        <div class="form">
-            <h2>Contact Me</h2>
-            <p>
-                Though I'm not looking for any opportunities, my dms are always open
-            </p>
-            <form id="contact_form">
-                <div class="name_email">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
+        <!-- about me section-->
+        <section id="about_me">
+            <div class="about-me-wrapper">
+                <h2>About Me</h2>
+                <div class="profile-pic-wrapper">
+                    <img class="center_cropped" id="profile_picture" alt="My photo" ß src="images/my_image.jpg">
                 </div>
-                <input type="text" placeholder="Subject">
-                <textarea id="message" placeholder="Message" class="message_area"></textarea>
-            </form>
-            <input id="send_message" class="button" type="submit" value="Send Message">
+                <div class="descript-wrapper">
+                    <p>
 
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer id="footer" class="footer">
-        <p>Designed and created by Brandon Ngacho. © 2022</p>
-    </footer>
+                        I'm a programmer and statistician. I'm still pursuing my bachelors in Computer
+                        Science
+                        and Statistics. In the software world, I've worked as a systems intern, back
+                        end
+                        developer,
+                        data pipeline intern, and in artificial intelligence. Most of my expertise is in front-end
+                        development.
+                        I've
+                        worked
+                        extensively in developing web and android applications.
+                        Outside tech, I play the guitar, play Fantasy Premier League, and read books. This website
+                        is a collection of some projects I've worked on, and musings on some things I've read.
+                    </p>
+
+                </div>
+                <div id="tech_toolbox" class="tech-tool-box-wrapper">
+                    <p>I've worked in the following languages or with the following technologies</p>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>Firebase</li>
+                        <li>Java and Kotlin</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="projects">
+            <div class="projects-wrapper">
+                <h2>Projects</h2>
+                <div class="card_layout">
+                    <h3>Artificially Intelligent Pacman agent</h3>
+                    <p>Working in a team of 3, we implemented a pac-man agent for COSC-241: Introduction to
+                        Artificial
+                        Intelligence.
+                        The agent competed against other agents in a round-robin capture the flag tournament and
+                        emerged
+                        5th
+                        out of 41 teams. Technologies and techniques used:
+                    <table class="tech_stack">
+                        <tr>
+                            <td>
+                                Python
+                            </td>
+                            <td>
+                                Particle Filtering
+                            </td>
+                            <td>
+                                Q learning
+                            </td>
+                            <td>
+                                Alpha-Beta Search
+                            </td>
+                        </tr>
+                    </table><br>
+                    <a href="https://github.com/ngacho/pacman-contest"><img class="github_logo" width="24" height="24"
+                            alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
+                </div>
+
+                <div class="card_layout">
+                    <h3>Run Tracking Demo</h3>
+                    <p>I learnt how to impelement tracking using Google Maps APIs on Android.Adapted from the youtube
+                        series
+                        by Phillip Lackner Technologies and techniques used:
+                    <table class="tech_stack">
+                        <tr>
+                            <td>
+                                Mvvm architecture
+                            </td>
+                            <td>
+                                Dagger Hilt
+                            </td>
+                            <td>
+                                Google Maps API
+                            </td>
+                        </tr>
+                    </table><br>
+                    <a href="https://github.com/ngacho/RunTrackingDemo"><img class="github_logo" width="24" height="24"
+                            alt="Github logo" src="images/GitHub-Mark-32px.png"></a></p>
+
+                </div>
+
+
+                <div class="card_layout">
+                    <h3>Protaskinator</h3>
+                    <p>A simple, but elegant to-do app (Boring booo!! :))) using Android Best Practicees. Technologies
+                        and
+                        techniques used:
+                    <table class="tech_stack">
+                        <tr>
+                            <td>
+                                Mvvm architecture
+                            </td>
+                            <td>
+                                Room for sqlite
+                            </td>
+                            <td>
+                                Navigation component
+                            </td>
+                            <td>
+                                Dagger 2 for Dependency Injection
+                            </td>
+                        </tr>
+                    </table><br>
+                    <a href="https://github.com/ngacho/Protaskinator"><img class="github_logo" width="24" height="24"
+                            alt="Github logo" src="images/GitHub-Mark-32px.png"></a>
+                    </p>
+                </div>
+
+                </ul>
+            </div>
+
+        </section>
+        <section id="contact_me">
+            <div class="form">
+                <h2>Contact Me</h2>
+                <p>
+                    Though I'm not looking for any opportunities, my dms are always open
+                </p>
+                <form id="contact_form">
+                    <div class="name_email">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea id="message" placeholder="Message" class="message_area"></textarea>
+                </form>
+                <input id="send_message" class="button" type="submit" value="Send Message">
+
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <p>Designed and created by Brandon Ngacho. © 2022</p>
+        </footer>
+    </div>
+
 </body>
 
 </html>
