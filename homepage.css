@@ -50,19 +50,6 @@ body {
 }
 
 
-section {
-    min-height: 100%;
-    display: block;
-    padding: 20px;
-}
-
-section.welcome div {
-    display: block;
-    line-height: normal;
-    margin: auto;
-    width: 50%;
-}
-
 section.welcome div h2 {
     font-size: 2em;
 }
@@ -479,6 +466,24 @@ footer {
 @media only screen and (min-width: 992px) {
 
 
+    html, body{
+        height: 100%;
+    }
+
+    .welcome, .about_me_sec, .projects_sec, .contact_me_sec{
+        height: 100%;
+    }
+
+    .welcome{
+        width: 60%;
+        margin: auto;
+    }
+
+    .contact_me_sec{
+        width: 60%;
+        margin: auto;
+    }
+
     .whole_page_container {
         display: -webkit-box;
         display: -moz-box;
@@ -488,48 +493,52 @@ footer {
         display: flex;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+
+        height: 100%;
     }
 
-    .welcome_page_container {
+
+
+    .welcome-wrapper {
         order: 0;
+        height: 100%;
+
     }
 
     .about-me-wrapper {
         order: 1;
 
         width: 60%;
-        margin: auto;
+        height: 100%;
+        margin: 0 auto 0 auto;
 
         line-height: 1;
         font-size: 1.2em;
+
     }
 
     .projects-wrapper {
         order: 2;
 
         width: 60%;
-        margin: auto;
+        height: 100%;
+
+        margin: 0 auto 0 auto;
         font-size: 1em;
         line-height: 1;
 
     }
 
     .form {
+        width: 100%;
         order: 3;
 
-        width: 60%;
-        margin: auto;
+        height: 100%;
+        margin: 0 auto 0 auto;
         font-size: 1.2em;
 
         line-height: 1;
-    }
-
-    .form p {
-        font-size: 1em;
-        margin: auto;
-        opacity: 90%;
-        width: 60%;
     }
 
     .footer {
@@ -567,7 +576,7 @@ footer {
         font-size: 1em;
         margin: auto;
         opacity: 90%;
-        width: 95%;
+        
     }
 }
 
